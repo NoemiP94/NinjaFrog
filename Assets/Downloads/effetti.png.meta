@@ -1,0 +1,4831 @@
+fileFormatVersion: 2
+guid: 96db5a10b4f78c04eb8332df112e0a67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5273196886931721125
+    second: effetti_0
+  - first:
+      213: 2786593470864808470
+    second: effetti_1
+  - first:
+      213: -7203649160510933537
+    second: effetti_2
+  - first:
+      213: -6433984499230695935
+    second: effetti_3
+  - first:
+      213: -7848330573986731805
+    second: effetti_4
+  - first:
+      213: -1429949161629786587
+    second: effetti_5
+  - first:
+      213: 8903084543649782639
+    second: effetti_6
+  - first:
+      213: -5668767953764719754
+    second: effetti_7
+  - first:
+      213: 5256871609680812209
+    second: effetti_8
+  - first:
+      213: 2916452007973595737
+    second: effetti_9
+  - first:
+      213: 1741258342292550427
+    second: effetti_10
+  - first:
+      213: 1502436933862965615
+    second: effetti_11
+  - first:
+      213: -6954538046211106300
+    second: effetti_12
+  - first:
+      213: 3309646247229575828
+    second: effetti_13
+  - first:
+      213: 3670581364794765910
+    second: effetti_14
+  - first:
+      213: 4602622395013860382
+    second: effetti_15
+  - first:
+      213: 3722698000446271202
+    second: effetti_16
+  - first:
+      213: -4881479606049642735
+    second: effetti_17
+  - first:
+      213: -610448762568492107
+    second: effetti_18
+  - first:
+      213: -2970066842805931298
+    second: effetti_19
+  - first:
+      213: 6739905860020007288
+    second: effetti_20
+  - first:
+      213: 917519426143576909
+    second: effetti_21
+  - first:
+      213: -1258807930481756628
+    second: effetti_22
+  - first:
+      213: -3967487690892130691
+    second: effetti_23
+  - first:
+      213: 4108422637025171120
+    second: effetti_24
+  - first:
+      213: -2069985214757214918
+    second: effetti_25
+  - first:
+      213: 5240624806267490914
+    second: effetti_26
+  - first:
+      213: 6100479834918024316
+    second: effetti_27
+  - first:
+      213: 7071399315032911416
+    second: effetti_28
+  - first:
+      213: -843532557867115742
+    second: effetti_29
+  - first:
+      213: -3578286739025302542
+    second: effetti_30
+  - first:
+      213: 4686768657587294810
+    second: effetti_31
+  - first:
+      213: 5905683884649436231
+    second: effetti_32
+  - first:
+      213: 3246047004570623184
+    second: effetti_33
+  - first:
+      213: -2965904650083101517
+    second: effetti_34
+  - first:
+      213: 2847411288608057381
+    second: effetti_35
+  - first:
+      213: 6386659690669304853
+    second: effetti_36
+  - first:
+      213: -2376098951454721867
+    second: effetti_37
+  - first:
+      213: 5471220860576816047
+    second: effetti_38
+  - first:
+      213: 8155121497106841352
+    second: effetti_39
+  - first:
+      213: 8452394537741072900
+    second: effetti_40
+  - first:
+      213: 3874620457822902476
+    second: effetti_41
+  - first:
+      213: 699779681693149531
+    second: effetti_42
+  - first:
+      213: 331898447260978143
+    second: effetti_43
+  - first:
+      213: -378953997358616071
+    second: effetti_44
+  - first:
+      213: 7543172004157742483
+    second: effetti_45
+  - first:
+      213: 7809585602097522117
+    second: effetti_46
+  - first:
+      213: 5278196289348510996
+    second: effetti_47
+  - first:
+      213: 2440488904383960083
+    second: effetti_48
+  - first:
+      213: 5023950873336010391
+    second: effetti_49
+  - first:
+      213: 9180223666439174952
+    second: effetti_50
+  - first:
+      213: 94597545197234636
+    second: effetti_51
+  - first:
+      213: -6202094804474982554
+    second: effetti_52
+  - first:
+      213: -3784264737918373465
+    second: effetti_53
+  - first:
+      213: -2148421330733092017
+    second: effetti_54
+  - first:
+      213: -3169361763680252168
+    second: effetti_55
+  - first:
+      213: 2612471083568795715
+    second: effetti_56
+  - first:
+      213: 2998567968330858480
+    second: effetti_57
+  - first:
+      213: 1465036586580451382
+    second: effetti_58
+  - first:
+      213: -6619646337843070185
+    second: effetti_59
+  - first:
+      213: -6468023790902594898
+    second: effetti_60
+  - first:
+      213: 1097463925525154477
+    second: effetti_61
+  - first:
+      213: 4567178249484194067
+    second: effetti_62
+  - first:
+      213: 3162876322611553391
+    second: effetti_63
+  - first:
+      213: 4326539152081213189
+    second: effetti_64
+  - first:
+      213: 7119718543856349404
+    second: effetti_65
+  - first:
+      213: 7568157437147850036
+    second: effetti_66
+  - first:
+      213: -7506724330969430677
+    second: effetti_67
+  - first:
+      213: -1628434662938972375
+    second: effetti_68
+  - first:
+      213: 7335392454251236469
+    second: effetti_69
+  - first:
+      213: 144786033294711173
+    second: effetti_70
+  - first:
+      213: 59713325618469475
+    second: effetti_71
+  - first:
+      213: -5431634426306696333
+    second: effetti_72
+  - first:
+      213: -2920516129594282264
+    second: effetti_73
+  - first:
+      213: -2525209628625355104
+    second: effetti_74
+  - first:
+      213: -5244001837332876509
+    second: effetti_75
+  - first:
+      213: 4000038078592183872
+    second: effetti_76
+  - first:
+      213: 7208303706556517075
+    second: effetti_77
+  - first:
+      213: 2760138550100908476
+    second: effetti_78
+  - first:
+      213: 1144160933503663490
+    second: effetti_79
+  - first:
+      213: -3922456980977421362
+    second: effetti_80
+  - first:
+      213: 7810271261932302441
+    second: effetti_81
+  - first:
+      213: 341746228453889585
+    second: effetti_82
+  - first:
+      213: -4237378715162871242
+    second: effetti_83
+  - first:
+      213: 7645151347922918271
+    second: effetti_84
+  - first:
+      213: 3834819573113086872
+    second: effetti_85
+  - first:
+      213: -113348988443230861
+    second: effetti_86
+  - first:
+      213: -9075590112852591208
+    second: effetti_87
+  - first:
+      213: 4685633022844545747
+    second: effetti_88
+  - first:
+      213: 2296453409872864553
+    second: effetti_89
+  - first:
+      213: -1089690370520917962
+    second: effetti_90
+  - first:
+      213: 5463724597641452114
+    second: effetti_91
+  - first:
+      213: 8898235139376201964
+    second: effetti_92
+  - first:
+      213: -4683615263085732546
+    second: effetti_93
+  - first:
+      213: 4768094375862097818
+    second: effetti_94
+  - first:
+      213: -4776884343146731659
+    second: effetti_95
+  - first:
+      213: -7764245413791189377
+    second: effetti_96
+  - first:
+      213: -8414384843125415760
+    second: effetti_97
+  - first:
+      213: 4770165986394028087
+    second: effetti_98
+  - first:
+      213: -5139728709399126809
+    second: effetti_99
+  - first:
+      213: -6376487878069756301
+    second: effetti_100
+  - first:
+      213: 9179350079746483046
+    second: effetti_101
+  - first:
+      213: -8823335499023120193
+    second: effetti_102
+  - first:
+      213: -4635870811732831394
+    second: effetti_103
+  - first:
+      213: -8635747135762571099
+    second: effetti_104
+  - first:
+      213: -2576018240809912886
+    second: effetti_105
+  - first:
+      213: 1976899365054047419
+    second: effetti_106
+  - first:
+      213: -2934885172911971730
+    second: effetti_107
+  - first:
+      213: -7442735632042999181
+    second: effetti_108
+  - first:
+      213: 1034162838789244067
+    second: effetti_109
+  - first:
+      213: -5272020196123010262
+    second: effetti_110
+  - first:
+      213: -6372300799162965154
+    second: effetti_111
+  - first:
+      213: -1306649513065029903
+    second: effetti_112
+  - first:
+      213: -3405015860540378205
+    second: effetti_113
+  - first:
+      213: -2719401949332963062
+    second: effetti_114
+  - first:
+      213: -1242268001795002087
+    second: effetti_115
+  - first:
+      213: -6167663819690859241
+    second: effetti_116
+  - first:
+      213: 3852244380193375143
+    second: effetti_117
+  - first:
+      213: 278845361580373438
+    second: effetti_118
+  - first:
+      213: -992670639400668903
+    second: effetti_119
+  - first:
+      213: -4976003745849899003
+    second: effetti_120
+  - first:
+      213: 7225182327792302882
+    second: effetti_121
+  - first:
+      213: -5526677945354437990
+    second: effetti_122
+  - first:
+      213: 7952428555562809284
+    second: effetti_123
+  - first:
+      213: 5038011884805010892
+    second: effetti_124
+  - first:
+      213: -1379594236783701081
+    second: effetti_125
+  - first:
+      213: 28832659916524118
+    second: effetti_126
+  - first:
+      213: -433949385403006440
+    second: effetti_127
+  - first:
+      213: 6719224614963551949
+    second: effetti_128
+  - first:
+      213: 6246332857565570573
+    second: effetti_129
+  - first:
+      213: -3577652568745186469
+    second: effetti_130
+  - first:
+      213: -5472115160319990531
+    second: effetti_131
+  - first:
+      213: 6496435088670534567
+    second: effetti_132
+  - first:
+      213: 5685545086887577458
+    second: effetti_133
+  - first:
+      213: 6608144233450849112
+    second: effetti_134
+  - first:
+      213: 6618697839549447607
+    second: effetti_135
+  - first:
+      213: -5441892823685831410
+    second: effetti_136
+  - first:
+      213: -8938537871940768879
+    second: effetti_137
+  - first:
+      213: 5649263780644011801
+    second: effetti_138
+  - first:
+      213: -862438173226756583
+    second: effetti_139
+  - first:
+      213: 1106490823747496460
+    second: effetti_140
+  - first:
+      213: 3373440702239217113
+    second: effetti_141
+  - first:
+      213: 3447107503692081215
+    second: effetti_142
+  - first:
+      213: -2890999259658260860
+    second: effetti_143
+  - first:
+      213: 8356387721722523445
+    second: effetti_144
+  - first:
+      213: -1914449854330687940
+    second: effetti_145
+  - first:
+      213: -6564808494237918921
+    second: effetti_146
+  - first:
+      213: 3960323946761263222
+    second: effetti_147
+  - first:
+      213: 3657820583799853313
+    second: effetti_148
+  - first:
+      213: -6354803901934860000
+    second: effetti_149
+  - first:
+      213: -7357304816914465403
+    second: effetti_150
+  - first:
+      213: -849420845488545743
+    second: effetti_151
+  - first:
+      213: 8462171308929335774
+    second: effetti_152
+  - first:
+      213: -7969754134203652386
+    second: effetti_153
+  - first:
+      213: 3287332990402965984
+    second: effetti_154
+  - first:
+      213: 4991708392402004606
+    second: effetti_155
+  - first:
+      213: -4153138356665335038
+    second: effetti_156
+  - first:
+      213: -3518707793005792314
+    second: effetti_157
+  - first:
+      213: -8735058855863539263
+    second: effetti_158
+  - first:
+      213: -2229477986735173359
+    second: effetti_159
+  - first:
+      213: -5091699386016839335
+    second: effetti_160
+  - first:
+      213: -5888539247561202438
+    second: effetti_161
+  - first:
+      213: -8667764116921441033
+    second: effetti_162
+  - first:
+      213: 6310562866730599784
+    second: effetti_163
+  - first:
+      213: 8492444866584462799
+    second: effetti_164
+  - first:
+      213: 3364871903660017853
+    second: effetti_165
+  - first:
+      213: 5029508815322063499
+    second: effetti_166
+  - first:
+      213: 9213160665639658782
+    second: effetti_167
+  - first:
+      213: -3844145630986431254
+    second: effetti_168
+  - first:
+      213: -3871105113225686247
+    second: effetti_169
+  - first:
+      213: 4370270185941888622
+    second: effetti_170
+  - first:
+      213: 1371158910845598709
+    second: effetti_171
+  - first:
+      213: -4200776758566408203
+    second: effetti_172
+  - first:
+      213: -5730555541662069036
+    second: effetti_173
+  - first:
+      213: -624602136419067017
+    second: effetti_174
+  - first:
+      213: -4845512469814866362
+    second: effetti_175
+  - first:
+      213: 2671976058460815511
+    second: effetti_176
+  - first:
+      213: -5766618888383661898
+    second: effetti_177
+  - first:
+      213: 6130568559641317415
+    second: effetti_178
+  - first:
+      213: -4844687017714012836
+    second: effetti_179
+  - first:
+      213: -2946278219821339319
+    second: effetti_180
+  - first:
+      213: 5682585065630083779
+    second: effetti_181
+  - first:
+      213: 458501530601672508
+    second: effetti_182
+  - first:
+      213: 3845709468546889784
+    second: effetti_183
+  - first:
+      213: 3055828098809198296
+    second: effetti_184
+  - first:
+      213: -8949911069383018890
+    second: effetti_185
+  - first:
+      213: -1744502627573743898
+    second: effetti_186
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: effetti_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 469
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b543db3be57d1d6b0800000000000000
+      internalID: -5273196886931721125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 465
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ad15c6ff7fba620800000000000000
+      internalID: 2786593470864808470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 463
+        width: 50
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5743d414f770c90800000000000000
+      internalID: -7203649160510933537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 463
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e1cf8cf25e5b6a0800000000000000
+      internalID: -6433984499230695935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 464
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8eea9dce0251390800000000000000
+      internalID: -7848330573986731805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 464
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e503e40dcc72ce0800000000000000
+      internalID: -1429949161629786587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 463
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b148dc83c1e8b70800000000000000
+      internalID: 8903084543649782639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 464
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6736cb9949d7451b0800000000000000
+      internalID: -5668767953764719754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b85cdc70e824f840800000000000000
+      internalID: 5256871609680812209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 447
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95aadb336a1597820800000000000000
+      internalID: 2916452007973595737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 451
+        width: 31
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13788a9c313a2810800000000000000
+      internalID: 1741258342292550427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 449
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61445c5e6ab9d410800000000000000
+      internalID: 1502436933862965615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 445
+        width: 62
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ad5a26e748c7f90800000000000000
+      internalID: -6954538046211106300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492d2520ab93eed20800000000000000
+      internalID: 3309646247229575828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652b2cfbd4680f230800000000000000
+      internalID: 3670581364794765910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 383
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c0f0abeaccfdf30800000000000000
+      internalID: 4602622395013860382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 416
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee28a29b1ea9a330800000000000000
+      internalID: 3722698000446271202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 416
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117e8175920814cb0800000000000000
+      internalID: -4881479606049642735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 319
+        width: 129
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb3781b5104787f0800000000000000
+      internalID: -610448762568492107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_19
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 383
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2f26b41f338c6d0800000000000000
+      internalID: -2970066842805931298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_20
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 417
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871f01e8ba4f88d50800000000000000
+      internalID: 6739905860020007288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 420
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43eecd8e0fabbc00800000000000000
+      internalID: 917519426143576909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 419
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26b03f4bd0d78ee0800000000000000
+      internalID: -1258807930481756628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_23
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 403
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76c3ad37f6a0f8c0800000000000000
+      internalID: -3967487690892130691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_24
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 417
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b61f0bfe9c040930800000000000000
+      internalID: 4108422637025171120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 417
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35e5181a6fe543e0800000000000000
+      internalID: -2069985214757214918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 418
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2629caace707ab840800000000000000
+      internalID: 5240624806267490914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 395
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74f8bf861249a450800000000000000
+      internalID: 6100479834918024316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_28
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 398
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e2a7d0638a22260800000000000000
+      internalID: 7071399315032911416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_29
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 388
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b9adb9b9b2b44f0800000000000000
+      internalID: -843532557867115742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_30
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 384
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbe7ef5b2f575ec0800000000000000
+      internalID: -3578286739025302542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_31
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 384
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52dce3334fba0140800000000000000
+      internalID: 4686768657587294810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 383
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7445744143435f150800000000000000
+      internalID: 5905683884649436231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_33
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 384
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc17a76d864c0d20800000000000000
+      internalID: 3246047004570623184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_34
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 383
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b41e1e4f6df6d6d0800000000000000
+      internalID: -2965904650083101517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_35
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 389
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528abe21b79048720800000000000000
+      internalID: 2847411288608057381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_36
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 402
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c66a39629f1a850800000000000000
+      internalID: 6386659690669304853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_37
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 399
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8fc5fb796660fd0800000000000000
+      internalID: -2376098951454721867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_38
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 390
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab536a826eadeb40800000000000000
+      internalID: 5471220860576816047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_39
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 387
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f743f3bcfcc2170800000000000000
+      internalID: 8155121497106841352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_40
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 384
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a3283ac00fc4570800000000000000
+      internalID: 8452394537741072900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_41
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 351
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8defb17ca65c530800000000000000
+      internalID: 3874620457822902476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_42
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b592b54b9ed16b900800000000000000
+      internalID: 699779681693149531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb8e7a11e32b9400800000000000000
+      internalID: 331898447260978143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 353
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1b931e85fadbaf0800000000000000
+      internalID: -378953997358616071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_45
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 353
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d5e7be8fabea860800000000000000
+      internalID: 7543172004157742483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 353
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c527086ab8316c60800000000000000
+      internalID: 7809585602097522117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_47
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 341
+        width: 83
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41527616f8bef3940800000000000000
+      internalID: 5278196289348510996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_48
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 333
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31496107abb5ed120800000000000000
+      internalID: 2440488904383960083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_49
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 332
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796d43683b8a8b540800000000000000
+      internalID: 5023950873336010391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 331
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bbdb429c4b66f70800000000000000
+      internalID: 9180223666439174952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_51
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 329
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9ea1657f3105100800000000000000
+      internalID: 94597545197234636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_52
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 324
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f09fba2abbde9a0800000000000000
+      internalID: -6202094804474982554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_53
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 321
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1b65055479b7bc0800000000000000
+      internalID: -3784264737918373465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_54
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 323
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4338c9be264f22e0800000000000000
+      internalID: -2148421330733092017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_55
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 327
+        width: 66
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe0227944a2404d0800000000000000
+      internalID: -3169361763680252168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 290
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340191aeb9c514420800000000000000
+      internalID: 2612471083568795715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_57
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 302
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffb93b1ead0d9920800000000000000
+      internalID: 2998567968330858480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_58
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 306
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630241e630bd45410800000000000000
+      internalID: 1465036586580451382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 305
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bf5266aba4224a0800000000000000
+      internalID: -6619646337843070185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_60
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 287
+        width: 69
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2b97891a6fc36a0800000000000000
+      internalID: -6468023790902594898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa8bba20a9fa3f00800000000000000
+      internalID: 1097463925525154477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_62
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31155628b60e16f30800000000000000
+      internalID: 4567178249484194067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_63
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 289
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6461cdf14bc4eb20800000000000000
+      internalID: 3162876322611553391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 290
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507de929f64fa0c30800000000000000
+      internalID: 4326539152081213189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_65
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 289
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0b1533b425ec260800000000000000
+      internalID: 7119718543856349404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_66
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 289
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435ad6d571f770960800000000000000
+      internalID: 7568157437147850036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_67
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 295
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6509c94ef1c2d790800000000000000
+      internalID: -7506724330969430677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_68
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 287
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fe6974d43a669e0800000000000000
+      internalID: -1628434662938972375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_69
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 288
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cc9b3929c8cc560800000000000000
+      internalID: 7335392454251236469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_70
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 290
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58918f25122620200800000000000000
+      internalID: 144786033294711173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_71
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 293
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a98d904f424d000800000000000000
+      internalID: 59713325618469475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_72
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 290
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37be43e6445fe94b0800000000000000
+      internalID: -5431634426306696333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_73
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 298
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eeebbebd0e3877d0800000000000000
+      internalID: -2920516129594282264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_74
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 290
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aeb36ec837a4fcd0800000000000000
+      internalID: -2525209628625355104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_75
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 240
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3233744ec109937b0800000000000000
+      internalID: -5244001837332876509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_76
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 242
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ee58a707df28730800000000000000
+      internalID: 4000038078592183872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_77
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 242
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dace66a70a090460800000000000000
+      internalID: 7208303706556517075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_78
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 243
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb950a1336bfd4620800000000000000
+      internalID: 2760138550100908476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_79
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 242
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d7d579e40e0ef00800000000000000
+      internalID: 1144160933503663490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 243
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3f61a6822a099c0800000000000000
+      internalID: -3922456980977421362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_81
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 240
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960bae60558a36c60800000000000000
+      internalID: 7810271261932302441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_82
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136d25652602eb400800000000000000
+      internalID: 341746228453889585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_83
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 193
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a7ae7528ec135c0800000000000000
+      internalID: -4237378715162871242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_84
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 191
+        width: 97
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b5b0b25a8091a60800000000000000
+      internalID: 7645151347922918271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 193
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893ee118514083530800000000000000
+      internalID: 3834819573113086872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_86
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 191
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37df03012bd4d6ef0800000000000000
+      internalID: -113348988443230861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_87
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 193
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dbf5c70e60d0280800000000000000
+      internalID: -9075590112852591208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_88
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 191
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da2d72a866b60140800000000000000
+      internalID: 4685633022844545747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_89
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 196
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925e4ba8534aedf10800000000000000
+      internalID: 2296453409872864553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_90
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 212
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638dfe5a164a0e0f0800000000000000
+      internalID: -1089690370520917962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_91
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 198
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a9bf0d29c03db40800000000000000
+      internalID: 5463724597641452114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_92
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 206
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0ca62e6b1ec7b70800000000000000
+      internalID: 8898235139376201964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_93
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 198
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d5d2babb4700fb0800000000000000
+      internalID: -4683615263085732546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_94
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 192
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a975cc8829cab2240800000000000000
+      internalID: 4768094375862097818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_95
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 128
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5772d99bff815bdb0800000000000000
+      internalID: -4776884343146731659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_96
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 128
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f763502deebdf3490800000000000000
+      internalID: -7764245413791189377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_97
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 128
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0241601991a3b80800000000000000
+      internalID: -8414384843125415760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_98
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 127
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738baa2f0b8033240800000000000000
+      internalID: 4770165986394028087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_99
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 128
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec536268f30ca8b0800000000000000
+      internalID: -5139728709399126809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_100
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 135
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e51191f0a2287a0800000000000000
+      internalID: -6376487878069756301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_101
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 132
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6632e34634a936f70800000000000000
+      internalID: 9179350079746483046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_102
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 135
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb802a69c173d8580800000000000000
+      internalID: -8823335499023120193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_103
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 131
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5310120f041aafb0800000000000000
+      internalID: -4635870811732831394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_104
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 131
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a066c2fbb9a72880800000000000000
+      internalID: -8635747135762571099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_105
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 65
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5399dee05204cd0800000000000000
+      internalID: -2576018240809912886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_106
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 66
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4edba9f7b5f6b10800000000000000
+      internalID: 1976899365054047419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_107
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 66
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6265042c713547d0800000000000000
+      internalID: -2934885172911971730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_108
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 114
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3724fee306716b890800000000000000
+      internalID: -7442735632042999181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_109
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 117
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a441f56f951a5e00800000000000000
+      internalID: 1034162838789244067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_110
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 107
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b1761609506d6b0800000000000000
+      internalID: -5272020196123010262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_111
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 114
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5324ff5f2a0197a0800000000000000
+      internalID: -6372300799162965154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_112
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 106
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe52d7d039dddde0800000000000000
+      internalID: -1306649513065029903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_113
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 71
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a37be98d14feb0d0800000000000000
+      internalID: -3405015860540378205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_114
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 67
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a010188c55eb24ad0800000000000000
+      internalID: -2719401949332963062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_115
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 63
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911bc2d85d392cee0800000000000000
+      internalID: -1242268001795002087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_116
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 64
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7152c450f6e086aa0800000000000000
+      internalID: -6167663819690859241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_117
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 67
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3cb6d8adbe57530800000000000000
+      internalID: 3852244380193375143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_118
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 101
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb573440168aed300800000000000000
+      internalID: 278845361580373438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_119
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 88
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911309710535932f0800000000000000
+      internalID: -992670639400668903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_120
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 109
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5088a9705fea1fab0800000000000000
+      internalID: -4976003745849899003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_121
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 104
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b7d75eb01054460800000000000000
+      internalID: 7225182327792302882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_122
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 86
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab927b0bb4d43b0800000000000000
+      internalID: -5526677945354437990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_123
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 91
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c77ef333a3bc5e60800000000000000
+      internalID: 7952428555562809284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_124
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 83
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5bfffdd1d9ae540800000000000000
+      internalID: 5038011884805010892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_125
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 98
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3d45ed952badce0800000000000000
+      internalID: -1379594236783701081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_126
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 81
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a0144c62f666000800000000000000
+      internalID: 28832659916524118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_127
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 73
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8120e88455d4af9f0800000000000000
+      internalID: -433949385403006440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_128
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 68
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce96f4ff2b7f3d50800000000000000
+      internalID: 6719224614963551949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_129
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 77
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06eb04b3ae6fa650800000000000000
+      internalID: 6246332857565570573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_130
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 69
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bed26a1ff995ec0800000000000000
+      internalID: -3577652568745186469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_131
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 72
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4e81311442f04b0800000000000000
+      internalID: -5472115160319990531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_132
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 68
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab27962b49f72a50800000000000000
+      internalID: 6496435088670534567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_133
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 68
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277c66a122d17ee40800000000000000
+      internalID: 5685545086887577458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_134
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 40
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853426b3b28d4bb50800000000000000
+      internalID: 6608144233450849112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_135
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 48
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd7df12e965adb50800000000000000
+      internalID: 6618697839549447607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_136
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 55
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05657a2f438a74b0800000000000000
+      internalID: -5441892823685831410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_137
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 46
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b2893f92fe3f380800000000000000
+      internalID: -8938537871940768879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_138
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 54
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f34c73a77366e40800000000000000
+      internalID: 5649263780644011801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_139
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 48
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91615140d010804f0800000000000000
+      internalID: -862438173226756583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_140
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 40
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ae2b0ba8b0b5f00800000000000000
+      internalID: 1106490823747496460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_141
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 48
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d510d7027ed0de20800000000000000
+      internalID: 3373440702239217113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_142
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 55
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f386624d20696df20800000000000000
+      internalID: 3447107503692081215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_143
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 32
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ee6229d7b11e7d0800000000000000
+      internalID: -2890999259658260860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_144
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 54
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fe4bedb5ad7f370800000000000000
+      internalID: 8356387721722523445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_145
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 43
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e225c20028e65e0800000000000000
+      internalID: -1914449854330687940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_146
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 258
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7395b72d47d15e4a0800000000000000
+      internalID: -6564808494237918921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_147
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6789d2a95a5e5f630800000000000000
+      internalID: 3960323946761263222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1019085e07033c230800000000000000
+      internalID: 3657820583799853313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_149
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 34
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02908e735833fc7a0800000000000000
+      internalID: -6354803901934860000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_150
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 26
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dfa8bef3a95e990800000000000000
+      internalID: -7357304816914465403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_151
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 28
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130e7dfcd304634f0800000000000000
+      internalID: -849420845488545743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_152
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 43
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed14c3198fbaf6570800000000000000
+      internalID: 8462171308929335774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_153
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 29
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6279b27deb56190800000000000000
+      internalID: -7969754134203652386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_154
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 34
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1346f00f3fe9d20800000000000000
+      internalID: 3287332990402965984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_155
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 24
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a257fe55c164540800000000000000
+      internalID: 4991708392402004606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_156
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 13
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203c9eb3ba61d56c0800000000000000
+      internalID: -4153138356665335038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_157
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 28
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3bd79b7e90b2fc0800000000000000
+      internalID: -3518707793005792314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_158
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 18
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9af1c3046d6c680800000000000000
+      internalID: -8735058855863539263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_159
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 6
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111d816559d4f01e0800000000000000
+      internalID: -2229477986735173359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_160
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 29
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9594469a266a659b0800000000000000
+      internalID: -5091699386016839335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_161
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 23
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af42b2fc0c4b74ea0800000000000000
+      internalID: -5888539247561202438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_162
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 21
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4250e957ae5b780800000000000000
+      internalID: -8667764116921441033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_163
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8658f341e7f939750800000000000000
+      internalID: 6310562866730599784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_164
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 28
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc54b5b7c993bd570800000000000000
+      internalID: 8492444866584462799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_165
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 6
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db809542b2d62be20800000000000000
+      internalID: 3364871903660017853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_166
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 12
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82a7fbbe976cc540800000000000000
+      internalID: 5029508815322063499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_167
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 29
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15ad0edfc8bbdf70800000000000000
+      internalID: 9213160665639658782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_168
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 21
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae41f207ae9d6aac0800000000000000
+      internalID: -3844145630986431254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_169
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 29
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9131cf5d862174ac0800000000000000
+      internalID: -3871105113225686247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_170
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6eeb85549156ac30800000000000000
+      internalID: 4370270185941888622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_171
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb3093c3c5570310800000000000000
+      internalID: 1371158910845598709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_172
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 12
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffaee47bc7d3b5c0800000000000000
+      internalID: -4200776758566408203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_173
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de069db81af870b0800000000000000
+      internalID: -5730555541662069036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_174
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 14
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b9acc8aa7f457f0800000000000000
+      internalID: -624602136419067017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_175
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 13
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e85f1d41841ccb0800000000000000
+      internalID: -4845512469814866362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_176
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790c7e48114c41520800000000000000
+      internalID: 2671976058460815511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_177
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 6
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b875d28caad8ffa0800000000000000
+      internalID: -5766618888383661898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_178
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7205994bf97241550800000000000000
+      internalID: 6130568559641317415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_179
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 14
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5da53d53d634ccb0800000000000000
+      internalID: -4844687017714012836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_180
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 7
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d2412b197bc17d0800000000000000
+      internalID: -2946278219821339319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_181
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca22d272099cde40800000000000000
+      internalID: 5682585065630083779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_182
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f4c7c76bcec5600800000000000000
+      internalID: 458501530601672508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_183
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838f71ed264be5530800000000000000
+      internalID: 3845709468546889784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_184
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6fd24277b786a20800000000000000
+      internalID: 3055828098809198296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_185
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676b6121d478bc380800000000000000
+      internalID: -8949911069383018890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effetti_186
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee3bbd5a184ac7e0800000000000000
+      internalID: -1744502627573743898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
