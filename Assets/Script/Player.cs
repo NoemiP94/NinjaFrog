@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    public static Player instance; //trasformiamo il giocatore in un'istanza
     //MOVIMENTO
     [SerializeField]
     float moveSpeed = 4;
@@ -29,6 +31,14 @@ public class Player : MonoBehaviour
     bool doubleJump = false; //doppio salto
 
 
+    //SALUTE
+    public Health health; //riferiment allo script Health
+
+    private void Awake()
+    {
+        instance = this;    
+    }
+
     void Start()
     {
         //rigidbody 2d si trova attaccato al Player
@@ -38,6 +48,10 @@ public class Player : MonoBehaviour
         //si trova nell'oggetto sottostante a Player, ovvero NinjaFrog
         anim = GetComponentInChildren<Animator>();
         rend = GetComponentInChildren<SpriteRenderer>();
+
+        health = GetComponent<Health>();
+        health.onTakeDamage = TakeDamage; //impostiamo l'evento che è uguale alla funzione per l'animazione del danno
+
     }
 
     // Update is called once per frame
@@ -130,5 +144,13 @@ public class Player : MonoBehaviour
         anim.Play("PlayerJump");
         //cambiamo la velocità sull'asse Y (l'asse X rimane uguale)
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
+    }
+
+    //funzione animazione prendere danno
+    public void TakeDamage()
+    {
+        anim.Play("PlayerHit");
+        UIManager.instance.ShowHp();
+
     }
 }
