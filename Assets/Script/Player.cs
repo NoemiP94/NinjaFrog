@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //MOVIMENTO
     [SerializeField]
     float moveSpeed = 4;
     const float multipler = 110;
@@ -10,6 +11,24 @@ public class Player : MonoBehaviour
     Animator anim; //aggiungiamo l'animator
     SpriteRenderer rend; //accediamo allo SpriteRenderer
     float lastX = 0; //l'ultima direzione in cui il player ha guardato
+
+    //SALTO
+    //Collisione con il pavimento
+    [SerializeField]
+    Transform groundCheck = null; //oggetto da cui tirare la riga
+    [SerializeField]
+    Vector2 lineHeight = new Vector2(0, -0.25f); //lunghezza in negativo perchè deve guardare verso il basso
+    [SerializeField]
+    LayerMask floor; //layer
+
+    //Implementazione salto
+    [SerializeField]
+    float JumpForce = 4; //forza salto normale
+    [SerializeField]
+    float doubleJumpForce = 2; //forza doppio salto
+    bool doubleJump = false; //doppio salto
+
+
     void Start()
     {
         //rigidbody 2d si trova attaccato al Player
@@ -24,8 +43,41 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 groundPos = groundCheck.position; //posizione
+        Debug.DrawLine(groundPos, (groundPos+lineHeight)); //disegna la riga (posizioneFloor + (posizioneFloor + lunghezzaLinea))
+        //cerchiamo il pavimento
+        var floors = Physics2D.LinecastAll(groundPos, (groundPos + lineHeight), floor);
+        bool ground = (floors.Length>0); //se abbiamo trovato del pavimento sotto di noi
         //la x sarà uguale all'input orizzontale
         x = Input.GetAxis("Horizontal");
+
+        //quando premiamo il bottone "Salto"
+        if (Input.GetButtonDown("Jump"))
+        {
+            //se stiamo toccando il pavimento
+            if (ground) 
+            {
+                
+                
+                
+                Jump(JumpForce);//richiamiamo la funzione di salto
+            }
+            else //altrimenti facciamo il doppio salto
+            {
+                if (!doubleJump) //se il doppio salto è false
+                {
+                    //diventa true
+                    doubleJump = true;
+                    //effettuiamo un nuovo salto
+                    anim.Play("PlayerDoubleJump"); //attiviamo l'animazione doppio salto
+                    //cambiamo la velocità sull'asse Y (l'asse X rimane uguale)
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, doubleJumpForce);
+                }
+            }
+            
+        }
+
+
         //moltiplicare il valore orizzontale per la velocità, per il moltiplicatore e per il tempo
         x*=moveSpeed * multipler * Time.deltaTime; //movimento costante
 
@@ -46,9 +98,14 @@ public class Player : MonoBehaviour
         //impostiamo un valore ad anim, che è il float che
         //abbiamo impostato nei parametri dell'animator
         anim.SetFloat("x",abs);
+        //impostiamo il ground nell'animator
+        anim.SetBool("ground", ground);
 
-        
-
+        //se tocchiamo il pavimento, resettiamo doubleJump
+        if (ground) 
+        {
+            doubleJump = false; 
+        }
         
     }
     //funzione per far girare il PG
@@ -64,5 +121,14 @@ public class Player : MonoBehaviour
             //non specchia l'immagine
             rend.flipX = false;
         }
+    }
+
+    //funzione per il salto
+    public void Jump(float force)
+    {
+        //attiviamo l'animazione
+        anim.Play("PlayerJump");
+        //cambiamo la velocità sull'asse Y (l'asse X rimane uguale)
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
     }
 }
