@@ -4,6 +4,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     [SerializeField]
     PickUpType type = PickUpType.hp;
+    [SerializeField]
+    GameObject Effect = null; //generiamo l'effetto
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +22,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     UIManager.instance.AddNewLife(); //aggiungi una nuova vita
                     break;
             }
+            //se l'effetto non è null, prima di distruggere l'oggetto generiamo l'effetto
+            if (Effect != null) 
+                Instantiate(Effect, transform.position, Quaternion.identity); //passiamo la posizione e la rotazione teniamo quella dell'oggetto(Quaternion.identity)
+
             Destroy(gameObject);
         }
     }
