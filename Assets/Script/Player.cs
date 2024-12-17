@@ -62,6 +62,18 @@ public class Player : MonoBehaviour
         //cerchiamo il pavimento
         var floors = Physics2D.LinecastAll(groundPos, (groundPos + lineHeight), floor);
         bool ground = (floors.Length>0); //se abbiamo trovato del pavimento sotto di noi
+        //impostare un parent
+        if (ground == true)
+        {
+            if (transform.parent == null)
+            {
+                transform.SetParent(floors[0].transform);
+            }
+        }
+        else
+        {
+            transform.SetParent(null);
+        }
         //la x sarà uguale all'input orizzontale
         x = Input.GetAxis("Horizontal");
 
