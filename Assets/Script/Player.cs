@@ -4,6 +4,8 @@ public class Player : MonoBehaviour
 {
 
     public static Player instance; //trasformiamo il giocatore in un'istanza
+    [SerializeField]
+    GameObject model = null; //modello del Player
     //MOVIMENTO
     [SerializeField]
     float moveSpeed = 4;
@@ -34,6 +36,8 @@ public class Player : MonoBehaviour
     //SALUTE
     public Health health; //riferiment allo script Health
 
+    bool canMove = true;
+
     private void Awake()
     {
         instance = this;    
@@ -57,6 +61,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (canMove == false)
+        {
+            return;
+        }
         Vector2 groundPos = groundCheck.position; //posizione
         Debug.DrawLine(groundPos, (groundPos+lineHeight)); //disegna la riga (posizioneFloor + (posizioneFloor + lunghezzaLinea))
         //cerchiamo il pavimento
@@ -164,5 +172,19 @@ public class Player : MonoBehaviour
         anim.Play("PlayerHit");
         UIManager.instance.ShowHp();
 
+    }
+
+    //funzione per bloccare tutto
+    public void Deactivate()
+    {
+        canMove = false;
+        model.SetActive(false);
+    }
+
+    //funzione per attivare tutto
+    public void Activate()
+    {
+        canMove = true;
+        model.SetActive(true);
     }
 }
