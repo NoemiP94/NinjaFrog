@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -9,6 +11,8 @@ public class LevelManager : MonoBehaviour
     public bool respawning = false;
     [SerializeField]
     CameraManager cameraMan = null;
+    [SerializeField]
+    List<CheckPoint> checkPointList = new List<CheckPoint>();
     public void Awake()
     {
         instance = this;
@@ -17,7 +21,20 @@ public class LevelManager : MonoBehaviour
     {
         checkpointPosition = Player.instance.transform.position; //posizione del checkpoint uguale a quella del giocatore
     }
-
+    //funzione per impostare il checkpoint
+    public void SetCheckPoint(CheckPoint c)
+    {
+        //disattiviamo tutti i checkpoint
+        foreach(var item in checkPointList)
+        {
+            item.Disable();
+        }
+        //attiviamo quello desiderato
+        c.active = true;
+        //impostiamo checkpoint position
+        Vector2 pos = c.transform.position;
+        checkpointPosition = pos + Vector2.up;
+    }
     public void Respawn()
     {
         respawning = true;
