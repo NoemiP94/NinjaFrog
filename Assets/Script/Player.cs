@@ -37,6 +37,10 @@ public class Player : MonoBehaviour
     public Health health; //riferiment allo script Health
 
     bool canMove = true;
+    [SerializeField]
+    float radius = 0.3f;
+    [SerializeField]
+    KeyCode interactKey = KeyCode.Z;
 
     private void Awake()
     {
@@ -140,8 +144,32 @@ public class Player : MonoBehaviour
         {
             doubleJump = false; 
         }
-        
+        //interazioni
+        Interactions();
     }
+
+    void Interactions()
+    {
+        if (Input.GetKeyDown(interactKey))
+        {
+            //cerca tutti i collider vicini
+            var colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+            //per ogni oggetto trovato
+            foreach (var c in colliders) 
+            { 
+                //controlliamo se l'oggetto contiene un'interfaccia
+                Interactable interactable = c.GetComponent<Interactable>();
+                //se è stato trovato
+                if (interactable != null)
+                {
+                    //richiama la funzione interact()
+                    interactable.Interact();
+                    break; //interagiamo solo con il primo oggetto trovato
+                }
+            }
+        }
+    }
+
     //funzione per far girare il PG
     void Flip()
     {
