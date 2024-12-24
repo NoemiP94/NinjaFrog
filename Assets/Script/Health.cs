@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     public UnityAction onTakeDamage; //crea un evento
 
 
-    bool isDeath()
+    public bool isDeath()
     {
         return currentHp <= 0;     
     }

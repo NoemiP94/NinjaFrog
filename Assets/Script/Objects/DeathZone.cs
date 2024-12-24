@@ -15,6 +15,7 @@ public class DeathZone : MonoBehaviour
         {
             if (LevelManager.instance.respawning == true) return; //se è già successo esce dall'if
             Player.instance.health.TakeDamage(); //danno al giocatore
+            if (Player.instance.health.isDeath()) return; //se il personaggio è morto effettuiamo un ritorno
             LevelManager.instance.Respawn(); //richiama il metodo Respawn()
         }
 

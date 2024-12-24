@@ -199,6 +199,16 @@ public class Player : MonoBehaviour
     {
         anim.Play("PlayerHit");
         UIManager.instance.ShowHp();
+        //controlliamo se il personaggio è morto
+        if (health.isDeath())
+        {
+            //lo disattiviamo
+            Deactivate();
+            //blocchiamo la caduta del personaggio, distruggendo il rigidbody
+            Destroy(rb);
+            //attiviamo il pannello di game over
+            UIManager.instance.GameOverPanel.SetActive(true);   
+        }
 
     }
 

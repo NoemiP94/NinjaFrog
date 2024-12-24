@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     Transform heartHolder = null;
     [SerializeField]
     GameObject pausePanel = null;
+    public GameObject GameOverPanel;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class UIManager : MonoBehaviour
         //se premiamo ESC
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
+            if(Player.instance.health.isDeath())return;
             //attiva la pausa
             if (pausePanel.activeInHierarchy) //se è attivo
             {
@@ -69,7 +71,7 @@ public class UIManager : MonoBehaviour
         else
         {
           //richiamiamo la nostra scena
-        SceneManager.LoadScene(levelName);
+          SceneManager.LoadScene(levelName);
         }
         
     }
@@ -78,6 +80,12 @@ public class UIManager : MonoBehaviour
     {
         pausePanel.SetActive(false); //disattiviamo il pannello della pausa
         Time.timeScale = 1; //riattiviamo il tempo
+    }
+
+    public void Replay()
+    {
+        //ricarichiamo il livello corrente
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }
