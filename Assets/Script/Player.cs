@@ -36,11 +36,16 @@ public class Player : MonoBehaviour
     //SALUTE
     public Health health; //riferiment allo script Health
 
+    //DANNI
+    HitBox hitBox;
+
     bool canMove = true;
     [SerializeField]
     float radius = 0.3f;
     [SerializeField]
     KeyCode interactKey = KeyCode.Z;
+
+
 
     private void Awake()
     {
@@ -59,6 +64,8 @@ public class Player : MonoBehaviour
 
         health = GetComponent<Health>();
         health.onTakeDamage = TakeDamage; //impostiamo l'evento che è uguale alla funzione per l'animazione del danno
+
+        hitBox = GetComponentInChildren<HitBox>(); 
 
     }
 
@@ -81,10 +88,15 @@ public class Player : MonoBehaviour
             {
                 transform.SetParent(floors[0].transform);
             }
+            //quando tocca terra disattiva l'hitbox
+            SetHitBox(false);
         }
         else
         {
             transform.SetParent(null);
+            //quando saltiamo attiviamo l'hitbox
+            SetHitBox(true);
+
         }
         //la x sarà uguale all'input orizzontale
         x = Input.GetAxis("Horizontal");
@@ -183,6 +195,14 @@ public class Player : MonoBehaviour
             //non specchia l'immagine
             rend.flipX = false;
         }
+    }
+
+    //funzione per attivare l'hitbox
+    void SetHitBox(bool val)
+    {
+        if (hitBox == null) return; //non fa nulla
+        //se non è nullo attiviamo l'oggetto
+        hitBox.gameObject.SetActive(val);
     }
 
     //funzione per il salto
