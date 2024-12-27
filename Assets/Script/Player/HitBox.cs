@@ -17,6 +17,11 @@ public class HitBox : MonoBehaviour
         if (collision.tag == "Enemy") //se la collisione è con un Enemy
         {
             player.Jump(force);
+            Jumpable jump = collision.GetComponent<Jumpable>();
+            if (jump != null)
+            {
+                jump.onJumpOn();
+            }
             return;
         }
     }
