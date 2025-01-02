@@ -14,7 +14,15 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
 
     [SerializeField]
     Transform checkBorder = null;
-    
+
+    //MOVIMENTO
+    Vector3 dir;
+    [SerializeField]
+    float speed = 0.5f;
+    [SerializeField]
+    LayerMask floor;
+    [SerializeField]
+    LayerMask wallLayer;
 
     public void onJumpOn()
     {
@@ -43,6 +51,7 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
         {
             health = GetComponentInChildren<Health>();
         }
+        dir = lookRight;
     }
 
     private void Update()
@@ -52,5 +61,34 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
         var right = pos + lookRight;
         Debug.DrawLine(pos, downDir);
         Debug.DrawLine(pos, right);
+        //MOVIMENTO
+        //controllo pavimento
+        var collider = Physics2D.LinecastAll(checkBorder.position, downDir, floor); 
+        bool ground =( collider.Length > 0); // >0 tocca il terreno
+        if (!ground) //se false invertiamo la direzione
+        {
+            dir *= -1;
+
+            //cambiamo direzione dell'immagine
+            var scale = transform.localScale;
+            transform.localScale = new Vector3(scale.x * -1, scale.y, scale.z);
+            lookRight *= -1;
+        }
+        else        
+        {
+            //controllo muro
+            var wall = Physics2D.LinecastAll(checkBorder.position, right, wallLayer);
+            bool hitwall = (wall.Length > 0); // >0 tocca il terreno
+            if (hitwall) //se false invertiamo la direzione
+            {
+                dir *= -1;
+
+                //cambiamo direzione dell'immagine
+                var scale = transform.localScale;
+                transform.localScale = new Vector3(scale.x * -1, scale.y, scale.z);
+                lookRight *= -1;
+            }
+        }
+        transform.position += dir * speed * Time.deltaTime;
     }
 }
