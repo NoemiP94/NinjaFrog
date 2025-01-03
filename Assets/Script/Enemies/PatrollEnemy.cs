@@ -23,6 +23,10 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
     LayerMask floor;
     [SerializeField]
     LayerMask wallLayer;
+    float wait = 2;
+    float counter = 0;
+    [SerializeField]
+    bool changeState = true;
 
     public void onJumpOn()
     {
@@ -56,6 +60,12 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
 
     private void Update()
     {
+        if ( counter>0)
+        {
+            counter -= Time.deltaTime;
+            anim.SetFloat("x", 0); //animazione Idle
+            return;
+        }
         var pos = checkBorder.position;
         var downDir = pos + lookDown;
         var right = pos + lookRight;
@@ -73,6 +83,10 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
             var scale = transform.localScale;
             transform.localScale = new Vector3(scale.x * -1, scale.y, scale.z);
             lookRight *= -1;
+            if (changeState)
+                counter = wait; //attesa
+            
+            
         }
         else        
         {
@@ -87,8 +101,11 @@ public class PatrollEnemy : MonoBehaviour, Jumpable
                 var scale = transform.localScale;
                 transform.localScale = new Vector3(scale.x * -1, scale.y, scale.z);
                 lookRight *= -1;
+                if (changeState)
+                    counter = wait; //attesa
             }
         }
         transform.position += dir * speed * Time.deltaTime;
+        anim.SetFloat("x", 1); 
     }
 }
