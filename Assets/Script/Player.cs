@@ -45,7 +45,12 @@ public class Player : MonoBehaviour
     [SerializeField]
     KeyCode interactKey = KeyCode.Z;
 
-
+    //CONTRACCOLPO
+    [SerializeField]
+    float knockBackTime = 0.25f;
+    float knockBackCounter = 0;
+    Vector2 knockBackDir;
+    float knockBackForce = 1;
 
     private void Awake()
     {
@@ -72,8 +77,15 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (canMove == false)
         {
+            return;
+        }
+        if (knockBackCounter > 0)
+        {
+            knockBackCounter -= Time.deltaTime;
+            rb.linearVelocity = knockBackDir * Time.deltaTime * knockBackForce; //spostamento
             return;
         }
         Vector2 groundPos = groundCheck.position; //posizione
@@ -230,6 +242,16 @@ public class Player : MonoBehaviour
             UIManager.instance.GameOverPanel.SetActive(true);   
         }
 
+    }
+
+    //funzione per il contraccolpo
+    public void KnockBack(float force, Transform enemy)
+    {
+        knockBackCounter = knockBackTime;
+        knockBackForce = force;
+        var dir = transform.position - enemy.transform.position; //(posizione pg - posizione nemico)
+        dir.Normalize();
+        knockBackDir = dir;
     }
 
     //funzione per bloccare tutto

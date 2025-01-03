@@ -10,6 +10,10 @@ public class Health : MonoBehaviour
 
     public UnityAction onTakeDamage; //crea un evento
 
+    [SerializeField]
+    float invincibleTime = 1;
+    float counter = 0;
+    bool invincible = false;
 
     public bool isDeath()
     {
@@ -25,13 +29,27 @@ public class Health : MonoBehaviour
             currentHp = maxHp;
         }
     }
+    private void Update()
+    {
+        //invincibilità
+        if (invincible) 
+        { 
+            counter-=Time.deltaTime;
+            if(counter <= 0)
+            {
+                invincible = false;
+            }
+        }
+    }
 
     //funzione per subire danno
     public void TakeDamage()
     {
-        if (isDeath()) return; //se è morto, esce
+        if (isDeath() || invincible) return; //se è morto, esce
        
         currentHp--; //diminuisce 
+        invincible = true; //invincibilità
+        counter = invincibleTime;
         if(currentHp <= 0 )
         {
             currentHp = 0;
