@@ -7836,7 +7836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 2574578517525394491, guid: 09e4e61564a9b60478208c0f793f7793, type: 3}
-  bullet: {fileID: 7918728437916026541, guid: 5a7b6bf868b5180448dfa1036758060c, type: 3}
+  bullet: {fileID: 1615157820414151024, guid: 5a7b6bf868b5180448dfa1036758060c, type: 3}
   spawnTime: 2.5
   lookDir: {x: 0, y: -2, z: 0}
   spawnPoint: {fileID: 269000687004217421}
