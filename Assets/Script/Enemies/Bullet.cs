@@ -6,14 +6,14 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     float speed = 1; //velocità
     Vector3 direction;
-    protected Animator anim;
+    
     Rigidbody2D rb;
     bool isDestroyed = false;
 
     private void Awake()
     {
         instance = this;
-        anim = GetComponent<Animator>();
+        
         rb = GetComponent<Rigidbody2D>();
     }
     public void Init(Vector3 dir)
@@ -31,9 +31,10 @@ public class Bullet : MonoBehaviour
         {
             if (collision.tag == "Player")
             {
+                DestroyBullet();
                 //fa danno al giocatore
                 Player.instance.health.TakeDamage();
-                DestroyBullet();
+                
             }
         }
     }
@@ -42,9 +43,9 @@ public class Bullet : MonoBehaviour
     {
         isDestroyed = true;
 
-        //anim.Play("destroy"); //NON PARTE L'ANIMAZIONE
+        
 
-        Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
+        Destroy(gameObject);
     }
 
 }
