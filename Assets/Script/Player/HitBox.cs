@@ -24,5 +24,13 @@ public class HitBox : MonoBehaviour
             }
             return;
         }
+        else if(collision.tag == "Jumpable")
+        {
+            Jumpable jump = collision.GetComponent<Jumpable>();
+            if (jump != null)
+            {
+                jump.onJumpOn();
+            }
+        }
     }
 }
