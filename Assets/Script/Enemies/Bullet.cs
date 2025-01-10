@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour
         instance = this;
         
         rb = GetComponent<Rigidbody2D>();
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
     public void Init(Vector3 dir)
     {
@@ -31,20 +32,21 @@ public class Bullet : MonoBehaviour
         {
             if (collision.tag == "Player")
             {
-                DestroyBullet();
                 //fa danno al giocatore
                 Player.instance.health.TakeDamage();
-                
+                DestroyBullet();
             }
+            if(collision.gameObject.layer == LayerMask.NameToLayer("DestroyPoint"))
+            {
+                DestroyBullet();
+            }
+
         }
     }
 
     private void DestroyBullet()
     {
         isDestroyed = true;
-
-        
-
         Destroy(gameObject);
     }
 
