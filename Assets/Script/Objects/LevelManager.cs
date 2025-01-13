@@ -13,6 +13,9 @@ public class LevelManager : MonoBehaviour
     CameraManager cameraMan = null;
     [SerializeField]
     List<CheckPoint> checkPointList = new List<CheckPoint>();
+    public int coin = 0;
+    const string coinText = "coin";
+
     public void Awake()
     {
         instance = this;
@@ -20,6 +23,13 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         checkpointPosition = Player.instance.transform.position; //posizione del checkpoint uguale a quella del giocatore
+        //ricaviamo il nostro salvataggio
+        if (PlayerPrefs.HasKey(coinText))
+        {
+            coin = PlayerPrefs.GetInt(coinText,coin);
+        }
+        UIManager.instance.ShowCoinText(coin);
+        
     }
     //funzione per impostare il checkpoint
     public void SetCheckPoint(CheckPoint c)
@@ -54,5 +64,17 @@ public class LevelManager : MonoBehaviour
         Player.instance.Activate(); //riattiva il player
         respawning=false; //ritorna a false
         cameraMan.follow = true; //riattiva la camera
+    }
+
+    public void AddCoin()
+    {
+        coin++; //aggiungi moneta
+        UIManager.instance.ShowCoinText(coin);  //aggiorna il testo
+    }
+
+    public void Save()
+    {
+        PlayerPrefs.SetInt(coinText, coin);
+        
     }
 }

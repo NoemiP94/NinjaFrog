@@ -50,6 +50,7 @@ public class LevelExit : MonoBehaviour,Interactable
     //funzione per salvare il gioco
     void Save()
     {
+        LevelManager.instance.Save(); 
         if(PlayerPrefs.HasKey(completedLevel))
         {
             //se il salvataggio esiste, lo leggiamo

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
@@ -11,11 +12,14 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     GameObject pausePanel = null;
     public GameObject GameOverPanel;
+    [SerializeField]
+    Text coinText = null;
 
     private void Awake()
     {
         instance = this;
     }
+
     private void Update()
     {
         //se premiamo ESC
@@ -86,6 +90,11 @@ public class UIManager : MonoBehaviour
     {
         //ricarichiamo il livello corrente
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ShowCoinText(int val)
+    {
+        coinText.text = val.ToString();
     }
     
 }

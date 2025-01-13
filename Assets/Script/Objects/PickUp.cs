@@ -21,6 +21,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     Player.instance.health.AddNewLife(); //aggiungiamo salute   
                     UIManager.instance.AddNewLife(); //aggiungi una nuova vita
                     break;
+                case PickUpType.coin:
+                    LevelManager.instance.AddCoin(); //aggiungiamo una moneta
+                    break;
             }
             //se l'effetto non è null, prima di distruggere l'oggetto generiamo l'effetto
             if (Effect != null) 
@@ -32,6 +35,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     enum PickUpType
     {
-        hp, hpmax
+        hp, hpmax, coin
     }
 }
