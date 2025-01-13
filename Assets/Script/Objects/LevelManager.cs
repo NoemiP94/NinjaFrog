@@ -22,13 +22,28 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
-        checkpointPosition = Player.instance.transform.position; //posizione del checkpoint uguale a quella del giocatore
-        //ricaviamo il nostro salvataggio
-        if (PlayerPrefs.HasKey(coinText))
+
+        if (Player.instance != null && Player.instance.transform != null)
         {
-            coin = PlayerPrefs.GetInt(coinText,coin);
+            checkpointPosition = Player.instance.transform.position; //posizione del checkpoint uguale a quella del giocatore
+            //ricaviamo il nostro salvataggio
+            if (PlayerPrefs.HasKey(coinText))
+            {
+                coin = PlayerPrefs.GetInt(coinText,coin);
+            }
+            if (UIManager.instance != null) 
+            {
+                UIManager.instance.ShowCoinText(coin);
+            }
         }
-        UIManager.instance.ShowCoinText(coin);
+        else
+        {
+            Debug.LogError("Player.instance o Player.instance.transform è null");
+        }
+
+        
+        
+        
         
     }
     //funzione per impostare il checkpoint
@@ -69,7 +84,14 @@ public class LevelManager : MonoBehaviour
     public void AddCoin()
     {
         coin++; //aggiungi moneta
-        UIManager.instance.ShowCoinText(coin);  //aggiorna il testo
+        if(UIManager.instance != null)
+        {
+            UIManager.instance.ShowCoinText(coin);  //aggiorna il testo
+        }
+        else
+        {
+            Debug.LogError("UIManager.instance è null");
+        }
     }
 
     public void Save()

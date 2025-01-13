@@ -11,11 +11,20 @@ public class Map : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //disattiviamo tutte le porte
-        foreach(var items in doors)
+        if (doors != null && doors.Length > 0) 
         {
-            items.gameObject.SetActive(false);
-            int current = 0;
+            //disattiviamo tutte le porte
+            foreach (var door in doors)
+            {
+                if (door != null)
+                {
+                    door.gameObject.SetActive(false);
+                }
+                else
+                {
+                    Debug.LogError("Una delle porte non è assegnata");
+                }
+int current = 0;
             //se il nostro salvataggio esiste
             if (PlayerPrefs.HasKey(completedLevel))
             {
@@ -26,15 +35,21 @@ public class Map : MonoBehaviour
             for(int i = 0;i<doors.Length; i++)
             {
                 //se la nostra porta in posizione i è <= al nostro valore corrente + 1
-                if (doors[i].LevelId <= current + 1)
+                if (doors[i] != null && doors[i].LevelId <= current + 1)
                 {
                     //attiviamo la porta successiva al livello appena completato
                     doors[i].gameObject.SetActive(true);
                 }
             }
+
+
+
+            }
+            
         }
-
-    }
-
-    
+        else
+        {
+            Debug.LogError("Nessuna porta assegnata nell'Inspector.");
+        }
+    } 
 }

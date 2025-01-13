@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PickUp : MonoBehaviour
 {
     [SerializeField]
     PickUpType type = PickUpType.hp;
@@ -11,30 +11,43 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            switch (type)
+            if (Player.instance != null && Player.instance.health != null) 
             {
-                case PickUpType.hp:
-                    Player.instance.health.Heal(); //cura il player
-                    UIManager.instance.ShowHp(); //mostra gli hp
-                    break;
-                case PickUpType.hpmax:
-                    Player.instance.health.AddNewLife(); //aggiungiamo salute   
-                    UIManager.instance.AddNewLife(); //aggiungi una nuova vita
-                    break;
-                case PickUpType.coin:
-                    LevelManager.instance.AddCoin(); //aggiungiamo una moneta
-                    break;
+                switch (type)
+                {
+                    case PickUpType.hp:
+                        Player.instance.health.Heal(); //cura il player
+                        if(UIManager.instance != null)
+                        {
+                            UIManager.instance.ShowHp(); //mostra gli hp
+                        }
+                        break;
+                    case PickUpType.hpmax:
+                        Player.instance.health.AddNewLife(); //aggiungiamo salute
+                        if(UIManager.instance != null)
+                        {
+                            UIManager.instance.AddNewLife(); //aggiungi una nuova vita
+                        }
+                        break;
+                    case PickUpType.coin:
+                        if(LevelManager.instance != null)
+                        {
+                            LevelManager.instance.AddCoin(); //aggiungiamo una moneta
+                        }
+                        break;
+                }
+                //se l'effetto non è null, prima di distruggere l'oggetto generiamo l'effetto
+                if (Effect != null) 
+                    Instantiate(Effect, transform.position, Quaternion.identity); //passiamo la posizione e la rotazione teniamo quella dell'oggetto(Quaternion.identity)
             }
-            //se l'effetto non è null, prima di distruggere l'oggetto generiamo l'effetto
-            if (Effect != null) 
-                Instantiate(Effect, transform.position, Quaternion.identity); //passiamo la posizione e la rotazione teniamo quella dell'oggetto(Quaternion.identity)
-
             Destroy(gameObject);
         }
     }
 
     enum PickUpType
     {
-        hp, hpmax, coin
+        hp,
+        hpmax, 
+        coin
     }
 }

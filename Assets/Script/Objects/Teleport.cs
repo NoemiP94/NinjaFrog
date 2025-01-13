@@ -10,8 +10,16 @@ public class Teleport : MonoBehaviour,Interactable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //siccome il canvas è il primo oggetto lo possiamo ricercare con questo comando
-        canvas = transform.GetChild(0).gameObject;
+        if(transform.childCount > 0)
+        {
+            //siccome il canvas è il primo oggetto lo possiamo ricercare con questo comando
+            canvas = transform.GetChild(0).gameObject;
+        }
+        else
+        {
+            Debug.LogError("Canvas non trovato, assicurati che l'oggetto abbia almeno un figlio");
+        }
+        
     }
 
     //evento entrata
@@ -38,7 +46,14 @@ public class Teleport : MonoBehaviour,Interactable
     public void Interact()
     {
         if (destination == null) return;
-        //muoviamo il giocatore
-        Player.instance.transform.position = destination.spawnPoint.position;
+        if (Player.instance != null && Player.instance.transform != null) 
+        {
+            //muoviamo il giocatore
+            Player.instance.transform.position = destination.spawnPoint.position;
+        }
+        else
+        {
+            Debug.LogError("Player.insyance o Player.instance.transform è null");
+        }
     }
 }

@@ -6,6 +6,15 @@ public class LevelEntry : MonoBehaviour, Interactable
     public int LevelId = 1;
     public void Interact()
     {
-       SceneManager.LoadScene(LevelId);
+        if(LevelId >= 0 && LevelId < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(LevelId);
+        }
+        else
+        {
+            Debug.LogError("LevelId non valido: " +  LevelId);
+        }
+
+       
     }
 }

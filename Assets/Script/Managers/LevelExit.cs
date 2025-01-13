@@ -14,8 +14,16 @@ public class LevelExit : MonoBehaviour,Interactable
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //siccome il canvas è il primo oggetto lo possiamo ricercare con questo comando
-        canvas = transform.GetChild(0).gameObject;
+        if(transform.childCount > 0)
+        {
+            //siccome il canvas è il primo oggetto lo possiamo ricercare con questo comando
+            canvas = transform.GetChild(0).gameObject;
+        }
+        else
+        {
+            Debug.LogError("Canvas non trovato, assicurati che l'oggetto abbia almeno un figlio");
+        }
+        
     }
 
     //evento entrata
@@ -50,22 +58,34 @@ public class LevelExit : MonoBehaviour,Interactable
     //funzione per salvare il gioco
     void Save()
     {
-        LevelManager.instance.Save(); 
-        if(PlayerPrefs.HasKey(completedLevel))
+        if (LevelManager.instance != null) 
         {
-            //se il salvataggio esiste, lo leggiamo
-            int current = PlayerPrefs.GetInt(completedLevel); //leggiamo il numero corrente 
-            //se il livello appena completato è inferiore al LevelID
-            if (current < LevelID) 
+            LevelManager.instance.Save();
+            if(PlayerPrefs.HasKey(completedLevel))
             {
-                //impostiamo il nostro salvataggio
+                //se il salvataggio esiste, lo leggiamo
+                int current = PlayerPrefs.GetInt(completedLevel); //leggiamo il numero corrente 
+                //se il livello appena completato è inferiore al LevelID
+                if (current < LevelID) 
+                {
+                    //impostiamo il nostro salvataggio
+                    PlayerPrefs.SetInt(completedLevel, LevelID);
+                }
+            }
+            else
+            {
+                //se il salvataggio non esiste lo creiamo
                 PlayerPrefs.SetInt(completedLevel, LevelID);
             }
         }
         else
         {
-            //se il salvataggio non esiste lo creiamo
-            PlayerPrefs.SetInt(completedLevel, LevelID);
+            Debug.LogError("LevelManager.instance è null");
         }
+
+
+
+        
+        
     }
 }

@@ -22,21 +22,25 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        //se premiamo ESC
-        if (Input.GetKeyDown(KeyCode.Escape)) 
+        if (Player.instance != null && Player.instance.health != null)
         {
-            if(Player.instance.health.isDeath())return;
-            //attiva la pausa
-            if (pausePanel.activeInHierarchy) //se è attivo
+            //se premiamo ESC
+            if (Input.GetKeyDown(KeyCode.Escape)) 
             {
+                if(Player.instance.health.isDeath())return;
+                //attiva la pausa
+                if (pausePanel != null && pausePanel.activeInHierarchy) //se è attivo
+                {
                 Resume();
-            }
-            else
-            {
-                pausePanel.SetActive(true); //se non è attivo lo attiviamo
-                Time.timeScale = 0; //stoppiamo il tempo
+                }
+                else if (pausePanel != null)
+                {
+                    pausePanel.SetActive(true); //se non è attivo lo attiviamo
+                    Time.timeScale = 0; //stoppiamo il tempo
+                }
             }
         }
+
     }
 
     public void ShowHp()
@@ -57,9 +61,13 @@ public class UIManager : MonoBehaviour
 
     public void AddNewLife()
     {
-        GameObject g = Instantiate(hearts[0],heartHolder); //crezione nuovo cuore
-        hearts.Add(g); //aggiungiamolo alla lista dei cuori
-        ShowHp(); //aggiorniamo gli hp con i currentHp
+        if(heartHolder != null && hearts != null && hearts.Count > 0)
+        {
+            GameObject g = Instantiate(hearts[0],heartHolder); //crezione nuovo cuore
+            hearts.Add(g); //aggiungiamolo alla lista dei cuori
+            ShowHp(); //aggiorniamo gli hp con i currentHp
+        }
+        
     }
 
     public void Quit()
@@ -94,6 +102,7 @@ public class UIManager : MonoBehaviour
 
     public void ShowCoinText(int val)
     {
+        if (coinText == null) return;
         coinText.text = val.ToString();
     }
     
