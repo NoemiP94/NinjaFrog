@@ -6,7 +6,17 @@ public class PickUp : MonoBehaviour
     PickUpType type = PickUpType.hp;
     [SerializeField]
     GameObject Effect = null; //generiamo l'effetto
+    [SerializeField]
+    Item itemToGive = null;
 
+    private void Start()
+    {
+        if (itemToGive != null) 
+        {
+            //cerchiamo l'immagine e gli diamo quella dell'item 
+            GetComponentInChildren<SpriteRenderer>().sprite = itemToGive.image;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -35,6 +45,12 @@ public class PickUp : MonoBehaviour
                             LevelManager.instance.AddCoin(); //aggiungiamo una moneta
                         }
                         break;
+                    case PickUpType.item:
+                        if(itemToGive != null)
+                        {
+                            LevelManager.instance.AddItem(itemToGive);
+                        }
+                        break;
                 }
                 //se l'effetto non è null, prima di distruggere l'oggetto generiamo l'effetto
                 if (Effect != null) 
@@ -48,6 +64,7 @@ public class PickUp : MonoBehaviour
     {
         hp,
         hpmax, 
-        coin
+        coin,
+        item
     }
 }

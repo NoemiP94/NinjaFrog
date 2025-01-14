@@ -4,6 +4,10 @@ public class Tax : MonoBehaviour,Interactable
 {
     GameObject canvas;
     [SerializeField]
+    RequestType type = RequestType.coin;
+    [SerializeField]
+    Item requestedItem = null;
+    [SerializeField]
     int Import = 15;
     [SerializeField]
     GameObject RoadBlock = null;
@@ -19,6 +23,12 @@ public class Tax : MonoBehaviour,Interactable
             if (t != null) 
             {
                 t.text = Import.ToString();
+            }
+            if (type == RequestType.item) 
+            {
+                t.enabled = false; //disattiva il testo
+                var icon = canvas.transform.Find("icon"); //cerca l'icona
+                icon.GetComponent<UnityEngine.UI.Image>().sprite = requestedItem.image; //da all'icona l'immagine del requestedItem
             }
         }
         else
@@ -51,13 +61,34 @@ public class Tax : MonoBehaviour,Interactable
 
     public void Interact()
     {
-        //controlliamo se il giocatore possiede l'importo
-        if (LevelManager.instance.coin >= Import)
+        switch (type)
         {
-            LevelManager.instance.RemoveCoin(Import); //rimuoviamo l'importo
-            RoadBlock.SetActive(false); //disabilitiamo il blocco della strada
-            canvas.SetActive(false); //disabilitiamo il messaggio
-            Destroy(this); //distrugge lo script
+            case RequestType.coin:
+                //controlliamo se il giocatore possiede l'importo
+                if (LevelManager.instance.coin >= Import)
+                {
+                    LevelManager.instance.RemoveCoin(Import); //rimuoviamo l'importo
+                    RoadBlock.SetActive(false); //disabilitiamo il blocco della strada
+                    canvas.SetActive(false); //disabilitiamo il messaggio
+                    Destroy(this); //distrugge lo script
+                }
+                break;
+            case RequestType.item:
+                if (LevelManager.instance.CanRemoveItem(requestedItem))
+                {
+                    RoadBlock.SetActive(false); 
+                    canvas.SetActive(false); 
+                    Destroy(this); 
+                }
+                break;
         }
+
+       
+    }
+
+    enum RequestType
+    {
+        coin,
+        item
     }
 }

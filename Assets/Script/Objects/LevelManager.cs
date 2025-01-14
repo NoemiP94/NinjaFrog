@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
     List<CheckPoint> checkPointList = new List<CheckPoint>();
     public int coin = 0;
     const string coinText = "coin";
+    List<Item> itemList = new List<Item>();
 
     public void Awake()
     {
@@ -40,12 +41,8 @@ public class LevelManager : MonoBehaviour
         {
             Debug.LogError("Player.instance o Player.instance.transform è null");
         }
-
-        
-        
-        
-        
     }
+
     //funzione per impostare il checkpoint
     public void SetCheckPoint(CheckPoint c)
     {
@@ -104,5 +101,24 @@ public class LevelManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(coinText, coin);
         
+    }
+
+    public void AddItem(Item i)
+    {
+        itemList.Add(i);
+    }
+
+    public bool CanRemoveItem(Item i) 
+    {
+        foreach(var obj in itemList)
+        {
+            if(obj.Name == i.Name)
+            {
+                itemList.Remove(obj);
+                return true;
+            }
+
+        }
+        return false;
     }
 }
