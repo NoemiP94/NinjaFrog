@@ -94,6 +94,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void RemoveCoin(int price)
+    {
+        coin-=price;
+        UIManager.instance.ShowCoinText(coin);
+    }
+
     public void Save()
     {
         PlayerPrefs.SetInt(coinText, coin);
