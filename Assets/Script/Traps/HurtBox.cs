@@ -4,6 +4,7 @@ public class HurtBox : MonoBehaviour
 {
     [SerializeField]
     float force = 1;
+    public System.Action<Collision2D> OnCollisionEvent; //evento
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +18,14 @@ public class HurtBox : MonoBehaviour
                 h.TakeDamage();
                 Player.instance.KnockBack(force, transform);
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (OnCollisionEvent != null)
+        {
+            OnCollisionEvent.Invoke(collision);
         }
     }
 }
