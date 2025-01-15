@@ -3,8 +3,8 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField]
-    int maxHp = 3; //salute massima
+    
+    public int maxHp = 3; //salute massima
     
     public int currentHp = 3; //salute corrente
 

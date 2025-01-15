@@ -6,11 +6,14 @@ public class EnemyBase : MonoBehaviour, Jumpable
     protected Animator anim;
     [SerializeField]
     protected GameObject effect = null;
+    [SerializeField]
+    bool destroyMonster = true;
     public void onJumpOn()
     {
         if (health.isDeath()) return;
         health.TakeDamage();
-        anim.Play("Hit");
+        if(anim != null)
+            anim.Play("Hit");
         //se l'avversario è morto, generiamo un effetto
         if (health.isDeath())
         {
@@ -18,8 +21,9 @@ public class EnemyBase : MonoBehaviour, Jumpable
             {
                 Instantiate(effect, transform.position, Quaternion.identity);
             }
-            //distruggiamo l'oggetto dopo 0.5 secondi
-            Destroy(gameObject, 0.5f);
+            if(destroyMonster==true)
+                //distruggiamo l'oggetto dopo 0.5 secondi
+                Destroy(gameObject, 0.5f);
         }
 
     }
