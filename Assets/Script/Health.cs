@@ -66,4 +66,9 @@ public class Health : MonoBehaviour
         maxHp++;
         currentHp++;
     }
+
+    public void RestoreLife()
+    {
+        currentHp = maxHp;
+    }
 }
