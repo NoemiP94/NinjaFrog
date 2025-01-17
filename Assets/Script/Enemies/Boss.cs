@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 public class Boss : EnemyBase
@@ -11,6 +12,7 @@ public class Boss : EnemyBase
     [SerializeField]
     GameObject bossBattle = null;
 
+    //PHASE 1
     [SerializeField]
     float force = 1;
     [SerializeField]
@@ -35,9 +37,18 @@ public class Boss : EnemyBase
     [SerializeField]
     Image fillArea = null;
 
+    //PHASE 2
     [SerializeField]
     GameObject teleportEffect = null;
     Vector3 startPosition;
+    Vector3 upPosition;
+    SpriteRenderer rend;
+    float attackDelay = 0.3f;
+    [SerializeField]
+    GameObject FireProjectile = null;
+    [SerializeField]
+    Transform spawnPoint = null;
+
 
     public override void Initialize()
     {
@@ -55,6 +66,8 @@ public class Boss : EnemyBase
         rb = GetComponent<Rigidbody2D>();
         gameObject.tag = "Untagged"; //rende il boss intangibile
         fillArea.color = GetColor(); //imposta colore barra hp
+        rend = GetComponentInChildren<SpriteRenderer>();
+        upPosition = startPosition + new Vector3(0, 1.5f, 0);
     }
 
     //funzione per aggiornare gli hp
@@ -73,9 +86,8 @@ public class Boss : EnemyBase
             {
                 phase++; //passa alla prossima fase
                 gameObject.tag = "Untagged"; //reimpostiamo il tag
-                health.RestoreLife(); //reimposta gli hp
-                Instantiate(teleportEffect,transform.position, Quaternion.identity); //crea effetto di sparizione
-                transform.position = startPosition; //porta il boss in posizione originale
+                StartCoroutine(TeleportCo()); //richiama la coroutine del teleport
+                
             }
         }
         hpBar.maxValue = health.maxHp;
@@ -93,6 +105,7 @@ public class Boss : EnemyBase
                 RinoMovement();
                 break;
             case BattlePhase.Phase2:
+                Mage();
                 break;
             case BattlePhase.Phase3:
                 break;
@@ -226,6 +239,24 @@ public class Boss : EnemyBase
 
     #endregion
 
+    #region Mage
+
+    void Mage()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, upPosition,Time.deltaTime); //porta il boss in alto
+        //delay
+        counter -= Time.deltaTime;
+        if (counter <= 0)
+        {
+            counter=attackDelay;
+            var pos = new Vector3(Random.Range(-4,6.50f),1.15f,0);   //imposta posizione spawnPoint
+            spawnPoint.localPosition = pos; //assegna a spawnPoint la pos
+            Instantiate(FireProjectile,spawnPoint.position, Quaternion.identity); //crea un proiettile
+        }
+    }
+
+    #endregion
+
     Color GetColor()
     {
         switch (phase)
@@ -247,5 +278,18 @@ public class Boss : EnemyBase
         Phase2,
         Phase3,
         End
+    }
+
+    //COROUTINE TELETRASPORTO
+    IEnumerator TeleportCo()
+    {
+        Instantiate(teleportEffect, transform.position, Quaternion.identity); //crea effetto di sparizione
+        rend.enabled = false; //disattiva l'immagine
+        transform.position = startPosition; //porta il boss in posizione originale
+        yield return new WaitForSeconds(1); //aspetta 1 secondo
+        anim.SetBool("vulnerable", false);
+        health.RestoreLife(); //reimposta gli hp
+        Instantiate(teleportEffect, startPosition, Quaternion.identity); //crea effetto di apparizione
+        rend.enabled = true; //riattiva l'immagine
     }
 }
