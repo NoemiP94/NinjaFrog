@@ -35,9 +35,14 @@ public class Boss : EnemyBase
     [SerializeField]
     Image fillArea = null;
 
+    [SerializeField]
+    GameObject teleportEffect = null;
+    Vector3 startPosition;
+
     public override void Initialize()
     {
         base.Initialize();
+        startPosition = transform.position; //posizione boss a inizio battaglia
         hpBar.maxValue = health.maxHp;
         hpBar.value = health.currentHp;
         health.onTakeDamage = OnTakeDamage;
@@ -69,6 +74,8 @@ public class Boss : EnemyBase
                 phase++; //passa alla prossima fase
                 gameObject.tag = "Untagged"; //reimpostiamo il tag
                 health.RestoreLife(); //reimposta gli hp
+                Instantiate(teleportEffect,transform.position, Quaternion.identity); //crea effetto di sparizione
+                transform.position = startPosition; //porta il boss in posizione originale
             }
         }
         hpBar.maxValue = health.maxHp;
