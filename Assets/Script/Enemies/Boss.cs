@@ -43,11 +43,15 @@ public class Boss : EnemyBase
     Vector3 startPosition;
     Vector3 upPosition;
     SpriteRenderer rend;
-    float attackDelay = 0.3f;
     [SerializeField]
-    GameObject FireProjectile = null;
+    float attackTime = 6;
+    float attackDelay = 0.6f;
+    float attackCounter = 0;
+    [SerializeField]
+    Bullet FireProjectile = null;
     [SerializeField]
     Transform spawnPoint = null;
+    bool inAction = true;
 
 
     public override void Initialize()
@@ -87,7 +91,11 @@ public class Boss : EnemyBase
                 phase++; //passa alla prossima fase
                 gameObject.tag = "Untagged"; //reimpostiamo il tag
                 StartCoroutine(TeleportCo()); //richiama la coroutine del teleport
-                
+                if (phase == BattlePhase.Phase2)
+                {
+                    rb.gravityScale = 0; //porta la gravità a 0
+                }
+
             }
         }
         hpBar.maxValue = health.maxHp;
@@ -243,15 +251,52 @@ public class Boss : EnemyBase
 
     void Mage()
     {
-        transform.position = Vector3.MoveTowards(transform.position, upPosition,Time.deltaTime); //porta il boss in alto
-        //delay
+        
+        //gestione turno attacco/riposo
         counter -= Time.deltaTime;
         if (counter <= 0)
         {
-            counter=attackDelay;
-            var pos = new Vector3(Random.Range(-4,6.50f),1.15f,0);   //imposta posizione spawnPoint
+            //ogni 6 secondi cambia da attacco a riposo
+            inAction = !inAction;
+            counter = attackTime;
+            if (inAction)
+            {
+                //portiamo la gravità a 0
+                rb.gravityScale = 0;
+                gameObject.tag = "Untagged"; //rende il boss intangibile
+                anim.SetBool("vulnerable", false); //diventa invulnerabile
+            }
+            else
+            {
+                //portiamo la gravità a 1
+                rb.gravityScale = 1;
+                gameObject.tag = "Enemy"; //rende il boss tangibile
+                anim.SetBool("vulnerable", true); //setta la variabile -> diventa vulnerabile
+            }
+        }
+        if (inAction) 
+        {
+            SpellAction();
+        }
+        else
+        {
+
+        }
+        
+    }
+
+    void SpellAction()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, upPosition, Time.deltaTime); //porta il boss in alto
+        //delay
+        attackCounter -= Time.deltaTime;
+        if (attackCounter <= 0)
+        {
+            attackCounter = attackDelay;
+            var pos = new Vector3(Random.Range(-4, 6.50f), 1.15f, 0);   //imposta posizione spawnPoint
             spawnPoint.localPosition = pos; //assegna a spawnPoint la pos
-            Instantiate(FireProjectile,spawnPoint.position, Quaternion.identity); //crea un proiettile
+            Bullet bullet = Instantiate(FireProjectile, spawnPoint.position, Quaternion.identity); //crea un proiettile
+            bullet.Init(Vector3.down);
         }
     }
 
@@ -289,6 +334,7 @@ public class Boss : EnemyBase
         yield return new WaitForSeconds(1); //aspetta 1 secondo
         anim.SetBool("vulnerable", false);
         health.RestoreLife(); //reimposta gli hp
+        
         Instantiate(teleportEffect, startPosition, Quaternion.identity); //crea effetto di apparizione
         rend.enabled = true; //riattiva l'immagine
     }

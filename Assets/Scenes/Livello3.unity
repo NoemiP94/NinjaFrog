@@ -2344,7 +2344,8 @@ MonoBehaviour:
   green: {r: 0.24313726, g: 1, b: 0, a: 1}
   fillArea: {fileID: 1858647985}
   teleportEffect: {fileID: 5329601852108272405, guid: c73252f9b043a5048b708ac50e556f82, type: 3}
-  FireProjectile: {fileID: 1319858175244012061, guid: 18d85aaf1b5e5dc4da9f89d03684f2f3, type: 3}
+  attackTime: 6
+  FireProjectile: {fileID: -2382479819331009280, guid: 18d85aaf1b5e5dc4da9f89d03684f2f3, type: 3}
   spawnPoint: {fileID: 653501651}
 --- !u!50 &747382640
 Rigidbody2D:
