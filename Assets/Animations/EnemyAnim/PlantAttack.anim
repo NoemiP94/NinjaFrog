@@ -94,7 +94,7 @@ AnimationClip:
   - time: 0.083333336
     functionName: Callback
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 4702032500262506406, guid: 9cfef92764c8b7a4ab15c54b1844c59c, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

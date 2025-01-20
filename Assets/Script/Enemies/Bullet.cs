@@ -17,9 +17,10 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
-    public void Init(Vector3 dir)
+    public void Init(Vector3 dir, float speed=1)
     {
         direction = dir;
+        this.speed = speed;
     }
     void Update()
     {

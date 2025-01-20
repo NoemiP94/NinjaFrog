@@ -14,6 +14,8 @@ public class StaticEnemy : EnemyBase
     Vector3 lookDir = Vector3.left;
     [SerializeField]
     Transform spawnPoint = null;
+    [SerializeField]
+    float bulletSpeed = 1;
 
     public override void Initialize()
     {
@@ -54,6 +56,6 @@ public class StaticEnemy : EnemyBase
     public void SpawnBullet()
     {
         Bullet newBullet = Instantiate(bullet, spawnPoint.position, Quaternion.identity);
-        newBullet.Init(lookDir);
+        newBullet.Init(lookDir, bulletSpeed);
     }
 }

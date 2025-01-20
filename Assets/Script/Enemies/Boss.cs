@@ -53,6 +53,13 @@ public class Boss : EnemyBase
     Transform spawnPoint = null;
     bool inAction = true;
 
+    //PHASE 3
+    [SerializeField]
+    PlatformOnOff[] platforms = null;
+    [SerializeField]
+    GameObject[] models = null;
+    [SerializeField]
+    GameObject[] monsters = null;
 
     public override void Initialize()
     {
@@ -116,6 +123,7 @@ public class Boss : EnemyBase
                 Mage();
                 break;
             case BattlePhase.Phase3:
+                MageAndMonsters();
                 break;
             case BattlePhase.End:
                 break;
@@ -278,11 +286,6 @@ public class Boss : EnemyBase
         {
             SpellAction();
         }
-        else
-        {
-
-        }
-        
     }
 
     void SpellAction()
@@ -297,6 +300,51 @@ public class Boss : EnemyBase
             spawnPoint.localPosition = pos; //assegna a spawnPoint la pos
             Bullet bullet = Instantiate(FireProjectile, spawnPoint.position, Quaternion.identity); //crea un proiettile
             bullet.Init(Vector3.down);
+        }
+    }
+
+    void MageAndMonsters()
+    {
+        //gestione turno attacco/riposo
+        counter -= Time.deltaTime;
+        if (counter <= 0)
+        {
+            //ogni 6 secondi cambia da attacco a riposo
+            inAction = !inAction;
+            counter = attackTime;
+            //attiviamo le piattaforme
+            foreach(var p in platforms)
+            {
+                p.Activate(!inAction); //saranno attive quando non saremo in azione
+            }
+            if (inAction)
+            {
+                //portiamo la gravità a 0
+                rb.gravityScale = 0;
+                gameObject.tag = "Untagged"; //rende il boss intangibile
+                anim.SetBool("vulnerable", false); //diventa invulnerabile
+            }
+            else
+            {
+                //controlliamo l'array dei mostri
+                for(int i = 0; i < monsters.Length; i++)
+                {
+                    if(monsters[i] == null)
+                    {
+                        //generiamo un nuovo mostro
+                        var m = models[i];
+                        GameObject newMonster = Instantiate(m,m.transform.position, m.transform.rotation);
+                        newMonster.SetActive(true); //se è disattivato, lo attiviamo
+                        monsters[i] = newMonster; //lo aggiungiamo all'array dei mostri
+                    }
+                }
+                gameObject.tag = "Enemy"; //rende il boss tangibile
+                anim.SetBool("vulnerable", true); //setta la variabile -> diventa vulnerabile
+            }
+        }
+        if (inAction)
+        {
+            SpellAction();
         }
     }
 
