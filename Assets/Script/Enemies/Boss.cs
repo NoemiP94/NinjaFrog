@@ -102,6 +102,10 @@ public class Boss : EnemyBase
                 {
                     rb.gravityScale = 0; //porta la gravità a 0
                 }
+                else if (phase == BattlePhase.Phase3) 
+                {
+                    StartCoroutine(SpawnMonsterCo());
+                }
 
             }
         }
@@ -326,18 +330,20 @@ public class Boss : EnemyBase
             }
             else
             {
-                //controlliamo l'array dei mostri
-                for(int i = 0; i < monsters.Length; i++)
+                bool nullFounded = false;
+                foreach(var m in monsters)
                 {
-                    if(monsters[i] == null)
+                    if (m == null)
                     {
-                        //generiamo un nuovo mostro
-                        var m = models[i];
-                        GameObject newMonster = Instantiate(m,m.transform.position, m.transform.rotation);
-                        newMonster.SetActive(true); //se è disattivato, lo attiviamo
-                        monsters[i] = newMonster; //lo aggiungiamo all'array dei mostri
+                        nullFounded = true;
                     }
                 }
+                //la coroutine parte solo se trova null
+                if (nullFounded)
+                {
+                    StartCoroutine(SpawnMonsterCo());
+                }
+                
                 gameObject.tag = "Enemy"; //rende il boss tangibile
                 anim.SetBool("vulnerable", true); //setta la variabile -> diventa vulnerabile
             }
@@ -348,6 +354,25 @@ public class Boss : EnemyBase
         }
     }
 
+    //COROUTINE SPAWN MOB
+    IEnumerator SpawnMonsterCo()
+    {
+        //controlliamo l'array dei mostri
+        for (int i = 0; i < monsters.Length; i++)
+        {
+            if (monsters[i] == null)
+            {
+
+                //generiamo un nuovo mostro
+                var m = models[i];
+                Instantiate(teleportEffect, m.transform.position, m.transform.rotation);
+                yield return new WaitForSeconds(0.5f); //attende 1 secondo
+                GameObject newMonster = Instantiate(m, m.transform.position, m.transform.rotation);
+                newMonster.SetActive(true); //se è disattivato, lo attiviamo
+                monsters[i] = newMonster; //lo aggiungiamo all'array dei mostri
+            }
+        }
+    }
     #endregion
 
     Color GetColor()
