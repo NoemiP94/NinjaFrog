@@ -46,6 +46,8 @@ public class Boss : EnemyBase
     [SerializeField]
     float attackTime = 6;
     float attackDelay = 0.6f;
+    [SerializeField]
+    float lastAtkDelay = 0.4f;
     float attackCounter = 0;
     [SerializeField]
     Bullet FireProjectile = null;
@@ -60,6 +62,8 @@ public class Boss : EnemyBase
     GameObject[] models = null;
     [SerializeField]
     GameObject[] monsters = null;
+    [SerializeField]
+    Animator traps = null;
 
     public override void Initialize()
     {
@@ -88,8 +92,15 @@ public class Boss : EnemyBase
         {
             if (phase == BattlePhase.End)
             {
+                //disattiviamo le colonne di fuoco
+                traps.SetBool("On", false);
                 hpBar.maxValue = health.maxHp;
                 hpBar.value = health.currentHp;
+                //disattiva le piattaforme
+                foreach(var p in platforms)
+                {
+                    p.Activate(false);
+                }
                 Destroy(bossBattle); //distrugge l'oggetto
                 return;
             }
@@ -105,6 +116,30 @@ public class Boss : EnemyBase
                 else if (phase == BattlePhase.Phase3) 
                 {
                     StartCoroutine(SpawnMonsterCo());
+                }
+                else if(phase == BattlePhase.End)
+                {
+                    //disattiva le piattaforme
+                    foreach (var p in platforms)
+                    {
+                        p.Activate(false);
+                    }
+                    foreach (var m in monsters)
+                    {
+                        if(m != null)
+                        {
+                            //generiamo il teleportEffect
+                            Instantiate(teleportEffect, m.transform.position, Quaternion.identity);
+                            //distruggiamo il mostro
+                            Destroy(m);
+                        }
+                    }
+                    //attiviamo le colonne di fuoco
+                    traps.SetBool("On",true);
+                    //aumenta il tempo di attacco
+                    attackTime *= 2;
+                    //diminuisce il delay
+                    attackDelay = lastAtkDelay;
                 }
 
             }
@@ -130,6 +165,7 @@ public class Boss : EnemyBase
                 MageAndMonsters();
                 break;
             case BattlePhase.End:
+                Mage();
                 break;
         }
         
@@ -380,14 +416,14 @@ public class Boss : EnemyBase
         switch (phase)
         {
             case BattlePhase.Phase1:
-                return green;
+                return Color.blue;
             case BattlePhase.Phase2:
-                return yellow;
+                return green;
             case BattlePhase.Phase3:
-                return red;
+                return yellow;
            
         }
-        return Color.blue;
+        return red;
     }
 
     enum BattlePhase
@@ -407,7 +443,9 @@ public class Boss : EnemyBase
         yield return new WaitForSeconds(1); //aspetta 1 secondo
         anim.SetBool("vulnerable", false);
         health.RestoreLife(); //reimposta gli hp
-        
+        hpBar.maxValue = health.maxHp;
+        hpBar.value = health.currentHp;
+        fillArea.color = GetColor(); //imposta colore barra hp
         Instantiate(teleportEffect, startPosition, Quaternion.identity); //crea effetto di apparizione
         rend.enabled = true; //riattiva l'immagine
     }
