@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     //DANNI
     HitBox hitBox;
 
-    bool canMove = true;
+    public bool canMove = true;
     [SerializeField]
     float radius = 0.3f;
     [SerializeField]

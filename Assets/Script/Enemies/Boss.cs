@@ -65,6 +65,15 @@ public class Boss : EnemyBase
     [SerializeField]
     Animator traps = null;
 
+    //FINAL SCENE
+    [SerializeField]
+    AnimatorHelper helper = null;
+    bool IsDeath = false;
+    [SerializeField]
+    GameObject Drop = null;
+    [SerializeField]
+    Transform DropSpawnPoint = null;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -83,11 +92,14 @@ public class Boss : EnemyBase
         fillArea.color = GetColor(); //imposta colore barra hp
         rend = GetComponentInChildren<SpriteRenderer>();
         upPosition = startPosition + new Vector3(0, 1.5f, 0);
+        helper.OnStartAnimCallBack = OnEndBattle;
+        helper.callback = CloseBattle;
     }
 
     //funzione per aggiornare gli hp
     void OnTakeDamage()
-    { 
+    {
+        if (IsDeath) return;
         if (health.isDeath())
         {
             if (phase == BattlePhase.End)
@@ -101,7 +113,9 @@ public class Boss : EnemyBase
                 {
                     p.Activate(false);
                 }
-                Destroy(bossBattle); //distrugge l'oggetto
+                helper.gameObject.SetActive(true); //attiva scena finale
+                IsDeath = true;
+                //Destroy(bossBattle); //distrugge l'oggetto
                 return;
             }
             else
@@ -165,6 +179,7 @@ public class Boss : EnemyBase
                 MageAndMonsters();
                 break;
             case BattlePhase.End:
+                if (IsDeath) return;
                 Mage();
                 break;
         }
@@ -313,11 +328,21 @@ public class Boss : EnemyBase
                 rb.gravityScale = 0;
                 gameObject.tag = "Untagged"; //rende il boss intangibile
                 anim.SetBool("vulnerable", false); //diventa invulnerabile
+                //disattiva le piattaforme
+                foreach (var i in platforms)
+                {
+                    i.Activate(false);
+                }
             }
             else
             {
                 //portiamo la gravità a 1
                 rb.gravityScale = 1;
+                //riattiva le piattaforme
+                foreach(var i in platforms)
+                {
+                    i.Activate(true);
+                }
                 gameObject.tag = "Enemy"; //rende il boss tangibile
                 anim.SetBool("vulnerable", true); //setta la variabile -> diventa vulnerabile
             }
@@ -448,5 +473,34 @@ public class Boss : EnemyBase
         fillArea.color = GetColor(); //imposta colore barra hp
         Instantiate(teleportEffect, startPosition, Quaternion.identity); //crea effetto di apparizione
         rend.enabled = true; //riattiva l'immagine
+    }
+
+    void OnEndBattle()
+    {
+        //bloccare il giocatore
+        Player.instance.Deactivate();
+        //disattiva il modello del boss
+        transform.GetChild(0).gameObject.SetActive(false);
+        //disattiva rigidbody
+        rb.bodyType = RigidbodyType2D.Static;
+        //accedere al collider e disattivarlo
+        GetComponent<CircleCollider2D>().enabled = false;
+
+    }
+
+    void CloseBattle()
+    {
+        if(Drop!= null)
+        {
+            //genera un oggetto
+            GameObject coin = Instantiate(Drop, DropSpawnPoint.position,Quaternion.identity);
+            coin.transform.localScale = coin.transform.localScale * 3; //ingrandisce la moneta
+            coin.AddComponent<Rigidbody2D>();
+        }
+            
+        //riattiva il giocatore
+        Player.instance.Activate();
+        //distrugge la boss battle
+        Destroy(bossBattle);
     }
 }
