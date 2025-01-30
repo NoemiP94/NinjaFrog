@@ -52,6 +52,9 @@ public class Player : MonoBehaviour
     Vector2 knockBackDir;
     float knockBackForce = 1;
 
+    //SUONO
+    AudioSource jumpSound;
+
     private void Awake()
     {
         instance = this;    
@@ -71,6 +74,7 @@ public class Player : MonoBehaviour
         health.onTakeDamage = TakeDamage; //impostiamo l'evento che è uguale alla funzione per l'animazione del danno
 
         hitBox = GetComponentInChildren<HitBox>(); 
+        jumpSound = GetComponent<AudioSource>();
 
     }
 
@@ -222,6 +226,8 @@ public class Player : MonoBehaviour
     {
         //attiviamo l'animazione
         anim.Play("PlayerJump");
+        //attiviamo il suono
+        jumpSound.Play();
         //cambiamo la velocità sull'asse Y (l'asse X rimane uguale)
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
     }

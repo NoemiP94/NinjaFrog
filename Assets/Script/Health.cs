@@ -59,6 +59,11 @@ public class Health : MonoBehaviour
             //richiama l'evento
             onTakeDamage.Invoke();
         }
+        //attiviamo il suono
+        if(SoundManager.instance != null)
+        {
+            SoundManager.instance.PlaySound("hit");
+        }
     }
 
     public void AddNewLife()
