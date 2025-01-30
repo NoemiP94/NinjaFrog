@@ -224,6 +224,7 @@ public class Player : MonoBehaviour
     //funzione per il salto
     public void Jump(float force)
     {
+        if (canMove == false) return; //nessun salto
         //attiviamo l'animazione
         anim.Play("PlayerJump");
         //attiviamo il suono
@@ -235,6 +236,7 @@ public class Player : MonoBehaviour
     //funzione animazione prendere danno
     public void TakeDamage()
     {
+        if (canMove == false) return;
         anim.Play("PlayerHit");
         UIManager.instance.ShowHp();
         //controlliamo se il personaggio è morto
@@ -242,8 +244,10 @@ public class Player : MonoBehaviour
         {
             //lo disattiviamo
             Deactivate();
-            //blocchiamo la caduta del personaggio, distruggendo il rigidbody
-            Destroy(rb);
+            //blocchiamo la caduta del personaggio
+            canMove = false;
+            //impostiamo la velocità del rigidbody a 0
+            rb.linearVelocity = Vector2.zero;
             //attiviamo il pannello di game over
             UIManager.instance.GameOverPanel.SetActive(true);   
         }
@@ -253,6 +257,7 @@ public class Player : MonoBehaviour
     //funzione per il contraccolpo
     public void KnockBack(float force, Transform enemy)
     {
+        if (canMove == false) return;
         knockBackCounter = knockBackTime;
         knockBackForce = force;
         var dir = transform.position - enemy.transform.position; //(posizione pg - posizione nemico)
